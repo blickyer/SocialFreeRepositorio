@@ -1,0 +1,604 @@
+/* JUEGOS */
+body {
+font-family: Arial, Helvetica, sans-serif;	
+}
+.j-izq {
+	width: 640px ;
+	float: left;
+	padding: 10px 0 10px 10px;
+}
+
+.j-der {
+	width: 280px;
+	float: right;
+	padding: 10px 0 10px 10px;
+}
+
+.j_titulo {
+font-size: 16px;
+font-weight: bold;
+margin-bottom: 10px;	
+}
+
+.boxy {
+border: #F0D35B solid 1px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background: #FCF9F0;
+}
+
+.boxy p {
+padding: 8px;
+margin: 0;
+color: #755A13;
+clear: both;
+text-align: justify;
+}
+
+.titley {
+-moz-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+padding: 4px 8px;
+border-top: 1px solid white;
+border-bottom: 1px solid #F0D35B;
+background: #F9ECB7;
+background: -webkit-gradient( linear, left bottom, left top, color-stop(0.22, #F9ECB7), color-stop(1, #FBF3CF) );
+background: -moz-linear-gradient( center bottom, #F9ECB7 22%, #FBF3CF 100% );
+}
+
+.titley h2 {
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+color: #B59130;
+background: none;
+margin: 0;
+font-size: 16px;
+}
+
+#listjuegos {
+	width: 208px;
+	height: 150px;
+	display: inline-block;
+	position: relative;
+	margin: 2px 1px;
+	box-shadow: 0 1px 4px #BBB;
+	border-radius: 4px;
+}
+
+#listjuegos a {
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+
+#listjuegos .jtitle {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	max-width: 166px;
+	color: #FFF;
+	background-color: rgba(0,0,0,0.57);
+	padding: 3px 5px;
+	border-radius: 5px;
+	opacity: 1;
+	left: 5px;
+	z-index: 10;
+	top: 4px;
+	text-shadow: 0 1px 0 black;
+	font-size: 10px;
+	font-family: Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#listjuegos .jimagen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 4px;
+	width: 208px;
+	height: 150px;
+	background-color: #f7f7f7;
+	background-image: url('to-up/load-img.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#listjuegos .jimagen:hover {
+	opacity: 0.7;
+}
+
+#listjuegos .jimagen img {
+	width: 208px;
+	height: 150px;
+	border: 0;
+	border-radius: 4px;
+	-webkit-filter: grayscale(0%);
+	image-rendering: optimizespeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+#listjuegos .jinfo {
+	position: absolute;
+	right: 7px;
+	top: 127px;
+	color: white;
+	background-color: rgba(0,0,0,0.57);
+	font-size: 10px;
+	padding: 4px 5px;
+	border-radius: 5px;
+	z-index: 9;
+	text-shadow: 0 1px 0 black;
+	line-height: 9px;
+}
+
+#listjuegos .javatar {
+	height: 30px;
+	width: 30px;
+	left: 5px;
+	border-radius: 4px;
+	position: absolute;
+}
+
+#listjuegos .javatar img {
+	height: 30px;
+	width: 30px;
+	border-radius: 4px;
+	box-shadow: 0 0 3px black;
+}
+
+#listjuegos .jbloq {
+	background-position: -220px -120px!important;
+	background: url(../to-up/toup16.png) no-repeat;
+	display: block;
+	top: 119px;
+	left: 166px;
+	opacity: 0.5;
+	padding: 0px 18px 16px 0;
+	position: absolute;
+}
+
+#listjuegos .jstar{
+	display: block;
+	background: url(../to-up/pstar.png) no-repeat;
+	top: 4px;
+	left: 187px;
+	padding: 0px 24px 24px 0;
+	position: absolute;
+	z-index: 10;
+}
+
+#listjuegos .jinfo span {
+	background: url(../images/j-eye.png) no-repeat;
+	display: inline-block;
+	margin: -1px 2px;
+	width: 14px;
+	height: 10px;
+	text-indent: 17px;
+}
+
+#listjuegos .jinfo .v_pos{
+	background-position: -192px -200px;
+	background-image:url('../images/thumbs.png');
+	background-position: 0px -1px;
+	background-size: 11px;
+}
+
+#listjuegos .jinfo .visitas {
+	background-position: -2px -3px;
+}
+
+#listjuegos .jinfo .comentarios {
+	background-image:url('../images/thumbs.png');
+	background-position: -1px -2px;
+}
+
+#j-hits a {
+    display: inline-block;
+	position: relative;
+}
+
+#j-hits .j-img {
+    padding: 2px;    
+    background: white;
+    border: solid rgb(238, 238, 238) 1px;
+    border-radius: 10px;
+}
+
+#j-hits .j-img:hover {
+    opacity: 0.7;
+}
+
+#j-hits span {
+position: absolute;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+font-size: 11px;
+padding: 3px 5px;
+left: 7px;
+bottom: 7px;
+border-radius: 5px;
+text-shadow: 0 1px 0 black;
+line-height: 10px;
+}
+
+.javatar {
+width: 35px;
+height: 35px;
+background: #fff;
+padding: 1px;
+position:absolute;
+right: 5px;
+bottom: 5px;
+}
+
+.loading {
+top: 50%;
+right: 44%;
+position: absolute;
+z-index: 1;
+}
+
+.j-box {
+background: whiteSmoke;
+padding: 2px;
+margin: 0px;
+}
+
+.j-box_content {
+background-color: white;
+border: 1px solid #D9D9D9;
+border-top: 0;
+overflow: hidden;
+}
+
+.j-box_title {
+border: 1px solid #CCC;
+background: #f3f3f3;
+padding: 7px;
+font-size: 14px;
+font-weight: bold;
+color: #333;
+}
+
+.j-box_body {
+background: white;
+border: 1px solid #D9D9D9;
+margin-bottom: 12px;
+padding: 1px;
+-moz-box-shadow: 0px 2px 3px #E5E5E5;
+-webkit-box-shadow: 0px 2px 3px #E5E5E5;
+}
+
+.jc-avatar {
+margin: 0 5px 0 -5px;
+padding: 2px;
+background: white;
+-webkit-box-shadow: gray 0 0 1px;
+-moz-box-shadow: gray 0 0 1px;
+}
+
+#full-game .j-swf {
+    width: 100%;
+    margin: 30px 0 0 0;
+    height: 450px;
+    text-align: center;
+    position: relative;
+}
+
+
+#full-game a:active .j-swf {
+    display: none;
+    opacity: 0.5;
+}
+
+#full-game a:active p {
+    display: none;
+    opacity: 0.5;
+}
+
+#fg_centro p{
+    padding: 0 10px;
+font-size: 12px;
+color: #285FD5;
+text-align: center;
+font-weight: 700;
+}
+#fg_centro span.spacer{
+    display: block;
+    height: 2px;
+    background: url('../images/hrline.gif') top left repeat-x;
+}
+#fg_centro .item{
+    border-bottom: 1px solid #CCC;
+    padding: 1em 0 0;
+}
+#fg_centro .item .firma{
+    position: relative;
+    margin: 0 0 0 65px;
+    padding-bottom: 1em;
+    text-align: left;
+}
+#fg_centro .firma .info{
+    margin: 0 0 0.5em;
+}
+#fg_centro .firma .info span {
+    font-size: 11px;
+}
+#fg_centro .firma .options{
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
+}
+#fg_centro .firma:hover .options{
+    display: block;
+}
+#fg_centro .firma {
+    font-size: 12px;
+}
+#fg_centro .firma a{
+    font-weight: bold;
+    text-decoration: underline;
+    color:#000;
+}
+#fg_centro .form {
+    padding-left: 5px;
+    margin-top: 20px;
+}
+#fg_centro .form form{
+    width: 688px;
+    float: right;
+    background: whiteSmoke;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+#fg_centro .noComments{
+    font-weight: bold; 
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    margin: 20px 0 20px 0;
+}
+.masvisto {
+float: left;
+overflow: hidden;
+}
+.j_stat {
+width: 88px;
+display: inline-block;
+text-align: center;	
+}
+
+.j_stat b {
+color: #1262BE;
+font-size: 13px;	
+}
+
+.j_search input[type="text"] {
+padding: 7px;
+border-radius: 4px;
+}
+
+.j_search span {
+font-weight: bold;
+font-size: 14px;	
+}
+
+.form-add-post input.text-inp, .form-add-post textarea {
+width: 575px;	
+}
+
+form .loader {
+margin: 40px 0;
+display: none;
+}
+
+.j_avatar {
+text-align: center;
+margin: 10px 0;	
+}
+
+.j_avatar a {
+display: block;
+position: relative;
+width: 131px;
+margin: auto;	
+}
+
+.j_avatar a img {
+padding: 3px;
+background: white;
+border: solid 1px #ccc;	
+}
+
+.j_avatar a span {
+position: absolute;
+bottom: 4px;
+left: 6px;
+background: rgba(0, 0, 0, 0.6);
+color: white;
+padding: 3px 6px;
+width: 108px;	
+}
+
+.au-d .btn_g{
+text-align: center;
+width: 109px;
+margin: auto;
+border-radius: 4px;
+padding: 8px;
+}
+
+.est-au .spa-a {
+display: inline-block;
+width: 87px;
+text-align: center;
+padding: 6px 0;
+border-right: 1px solid #ccc;	
+}
+
+.est-au .spa-a:last-child {
+border: none;
+}
+
+.est-au {
+border-top: 1px solid #ccc;
+margin-top: 5px;
+}
+
+.est-au .spa-a b {
+font-size: 14px;
+color: #6C8AFF;	
+}
+
+.op-post-user {
+border-top: 1px solid #ccc;
+overflow: hidden;	
+}
+
+.op-post-user .cce li {
+float: right;
+text-align: center;
+border-left: 1px solid #ccc;
+padding: 10px;
+color: #333;
+position: relative;
+}
+
+.op-post-user .cce li b {
+font-size: 14px;
+color: #479DFF;	
+}
+
+#mensajes .item {
+border-bottom: 1px solid #ccc;
+padding: 5px;
+}
+
+#mensajes .item .avatar-box img {
+padding: 2px;
+margin-right: 5px;	
+}
+
+#mensajes .clearfix {
+margin-top: 5px;
+color: #444;
+font-size: 12px;	
+}
+
+.lcomen {
+padding: 3px;	
+}
+
+.j_btn {
+padding: 7px 10px;
+display: inline-block;
+width: auto;
+margin: 8px 0px 5px 8px;
+border: solid 1px #ccc;
+border-radius: 4px;
+background: #f3f3f3;
+box-shadow: inset white 0 1px 1px, #EBEBEB 0 1px 1px;	
+}
+
+.j_btn i {
+background-image: url('../images/juegos/btn.png');
+height: 16px;
+width: 16px;
+display: block;	
+}
+
+.j_btn:hover {
+background: white;
+}
+
+.j_btn:active {
+background: #f3f3f3;
+box-shadow: white 0 0 0;	
+}
+
+.j_btn.j_like:hover i {background-position: 0px -32px;}
+.j_btn.j_dislike i {background-position: 0px -16px;}
+.j_btn.j_dislike:hover i {background-position: 0px -48px;}
+.j_btn.j_favs i {background-position: 0px -65px;}
+.j_btn.j_desfavs, .j_btn.j_favs:hover {background: #40C54B;border-color: #43A24F;box-shadow: inset #9BFFA7 0 1px 1px;}
+.j_btn.j_desfavs:hover {background: #FF3C3C;border-color: #C04343;box-shadow: inset #FF9B9B 0 1px 1px;}
+.j_btn.j_desfavs i {background-position: 0px -65px;}
+
+bar {
+background: red;
+width: 141px;
+position: absolute;
+left: 0;
+bottom: 0;
+display: block;
+}
+
+bar .progress_total {
+padding: 2px 0;
+background: green;
+display: block;	
+}
+
+.progress_total  {
+background: red;	
+}
+
+.j_Tops {
+width: 455px;
+float: left;
+margin: 5px;	
+}
+
+.j_Tops .j_icon {
+background-image: url('../images/juegos/btn.png');
+height: 16px;
+width: 16px;
+display: block;	
+}
+
+.j_Tops .j_icon.ji_visitas {background-position: 0px -96px;}
+.j_Tops .j_icon.ji_coment {background-position: 0px -80px;}
+.j_Tops .j_icon.ji_favs {background-position: 0px -65px;}
+
+.j_top_juegos .content {
+text-align: left;
+border-bottom: 1px #ccc solid;	
+}
+
+.j_top_juegos .content:hover {
+background: #f3f3f3;	
+}
+
+.j_top_juegos .content:last-child {
+border-bottom: 0;	
+}
+
+.j_top_juegos .content img {
+vertical-align: middle;
+height: 19px;
+width: 19px;	
+}
+
+.j_top_juegos .content a {
+padding: 7px 4px;
+display: inline-block;
+color: #3C3C3C;
+font-size: 13px;	
+}
+
+.j_top_juegos .content span {
+float: right;
+padding: 7px;
+display: block;
+font-weight: bold;
+color: #07f;
+font-size: 14px;	
+}
